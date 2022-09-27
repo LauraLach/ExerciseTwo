@@ -22,7 +22,6 @@
 .articleCard--image {
   background-color: #777;
   flex-basis: 40%;
-  max-height: 200px;
 }
 .articleCard--image img {
   height: auto;
