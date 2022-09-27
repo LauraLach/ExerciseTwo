@@ -1,12 +1,18 @@
 import React from "react";
+import { useParams } from "react-router";
+import Data from '../components/data';
 
 function Article() {
-    const backgroundImage = "url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000')";
+    // const backgroundImage = "url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000')";
+    const { id } = useParams();
+
+    const articleData = Data.find((article) => (article.id === id));
+
     return (
         <main className="articleMain">
-            <header className="articleHeader" style={{backgroundImage}}>
+            <header className="articleHeader" style={{/*backgroundImage*/}}>
                 <div class="articleHeaderContent">
-                    <h1>Article Title</h1>
+                    <h1>{articleData.title}</h1>
                     <p>Date</p>
                     <p>Note that this is the article blurb. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
