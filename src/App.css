@@ -29,9 +29,9 @@
 }
 .articleHeader {
   align-items: center;
-  background-color: #999;
+  background-color: rgb(190, 190, 190);
   display: flex;
-  height: 280px;
+  height: 340px;
   width: 100%;
 }
 .articleHeader h1 {
@@ -41,6 +41,9 @@
 }
 .articleHeaderContent {
   padding: 0px 400px;
+}
+.articleDesc {
+  font-size: 20px;
 }
 .articleTextSection {
   margin: 60px 400px;

@@ -14,7 +14,7 @@ function Article() {
                 <div class="articleHeaderContent">
                     <h1>{articleData.title}</h1>
                     <p>Date</p>
-                    <p>Note that this is the article blurb. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="articleDesc">Note that this is the article blurb. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </header>
             <section className="articleTextSection">
