@@ -17,7 +17,7 @@ function List() {
                  imageSrc={article.image.url}
                  title={article.title}
                 />
-            ))};
+            ))}
         </main>
     );
 }
